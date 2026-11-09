@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Academic management platform for universities: admissions, student records, scheduling, grading, registry, finance and research." />
+  <title>CoffeeUMS — Academic management platform for universities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="CoffeeUMS home"><img src="assets/coffeeums-wordmark.png" alt="CoffeeUMS" /></a>
+      <div class="nav-links">
+        <a href="#admissions">Platform</a><a href="#security">Security</a><a href="#modules">Modules</a>
+      </div>
+      <a class="top-cta" href="#demo">Request a demo</a>
+      <button class="menu-button" aria-label="Open navigation" aria-expanded="false"><i></i><i></i><i></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="campus campus-scope" aria-label="CoffeeUMS platform journey">
+      <canvas id="campus-canvas" class="campus-gl" aria-label="A university campus at night rendered as a 3D point-cloud scan"></canvas>
+      <div class="vignette"></div><div class="campus-overlay" id="campus-overlay" aria-hidden="true"></div>
+      <div class="scan-rail" aria-hidden="true"><div class="scan-pos"></div><span>Scan <b id="scan-number">00%</b></span></div>
+      <div class="campus-label"><div><b id="stage-number">01</b><span id="stage-name">ADMISSIONS</span></div><a href="#admissions">Explore the platform</a></div>
+
+      <section class="stage hero" data-stage="0">
+        <div class="panel"><p class="eyebrow"><span class="chip">CoffeeUMS</span> University management platform</p>
+          <h1>From admission to the end of the academic year.</h1>
+          <p class="lead">CoffeeUMS covers admissions, student services, scheduling, grading, registry, fees and research.</p>
+          <div class="buttons"><a class="button primary" href="#demo">Request a demo</a><a class="button secondary" href="#admissions">Explore the platform <span>↓</span></a></div>
+          <p class="scroll-hint">Scroll to journey through the campus <span>↓</span></p>
+        </div>
+      </section>
+      <section class="stage" id="admissions" data-stage="1"><div class="panel"><p class="eyebrow"><b>01</b> · Admissions</p><h2>Admissions, from application to enrolment.</h2><p class="lead">Bachelor's, master's and doctoral sessions, with state-funded and fee-paying places for every admission route.</p><div class="facts"><div><b>Grade average</b>The institution defines the calculation formula</div><div><b>Places</b>A released place automatically goes to the next candidate</div></div></div></section>
+      <section class="stage" data-stage="2"><div class="panel"><p class="eyebrow"><b>02</b> · Student services</p><h2>The student register, completed at enrolment.</h2><p class="lead">Data from previous years is imported through RMU import.</p><div class="facts"><div><b>Transfers</b>Requests with an approval workflow, including credit recognition</div><div><b>Registry</b>Registration numbers and approval routes</div></div></div></section>
+      <section class="stage" data-stage="3"><div class="panel"><p class="eyebrow"><b>03</b> · Teaching activity</p><h2>Scheduling, gradebook and attendance.</h2><p class="lead">The timetable is generated automatically, while every grade update remains in the log.</p><div class="facts"><div><b>Gradebook</b>Weighted assessment components</div><div><b>Portal</b>Students see their grades, schedule and assignments</div></div></div></section>
+      <section class="stage" data-stage="4"><div class="panel"><p class="eyebrow"><b>04</b> · Research and doctoral studies</p><h2>Research and doctoral school.</h2><p class="lead">Publications, projects and scores for academic ranks. Doctoral admissions, contracts and committees.</p><div class="facts"><div><b>Sources</b>Web of Science, Scopus, ORCID, Google Scholar</div><div><b>PPUA</b>Individual plans and progress reports</div></div></div></section>
+      <section class="stage" data-stage="5"><div class="panel"><p class="eyebrow"><b>05</b> · Exams and year completion</p><h2>Exams and year completion.</h2><p class="lead">Exam scheduling, committees and anonymous teaching-staff evaluation questionnaires.</p><div class="facts"><div><b>Progression</b>According to curriculum rules</div><div><b>Committees</b>With internal and external members</div></div></div></section>
+      <section class="stage" id="security" data-stage="6"><div class="panel"><p class="eyebrow"><b>06</b> · Security and audit</p><h2>Who changed what, and when.</h2><p class="lead">Module roles, two-factor authentication and audit trails. National ID is masked.</p><div class="facts"><div><b>2FA</b>With an authenticator app</div><div><b>Audit</b>Including every updated grade in the gradebook</div></div></div></section>
+    </section>
+
+    <section class="modules" id="modules"><div class="content-intro"><p class="eyebrow"><b>Modules</b></p><h2>What the platform includes.</h2></div><div class="module-grid" id="module-grid"></div></section>
+    <section class="demo" id="demo"><div class="content-intro"><p class="eyebrow">Demo · 60 minutes, in the application</p><h2>Schedule a demo.</h2><p class="lead">A presentation built around your institution's workflows: admissions, student records, scheduling and grading.</p><div class="buttons"><a class="button primary" href="mailto:office@ascendia.ro">Request a demo</a><a class="button secondary" href="https://ascendia.ro" target="_blank" rel="noreferrer">About Ascendia <span>↗</span></a></div></div></section>
+  </main>
+  <footer><div class="footer-grid"><div><a class="brand" href="#top"><img src="assets/coffeeums-wordmark.png" alt="CoffeeUMS" /></a><p class="footer-description">Academic management platform for universities, built in Romania by Ascendia S.A.</p><p class="contact">office@ascendia.ro<br>coffee-ums.com</p></div><nav><p>Product</p><a href="#admissions">Platform</a><a href="#security">Security</a><a href="#modules">Modules</a><a href="#demo">Demo</a></nav><nav><p>Resources</p><a href="mailto:office@ascendia.ro">Contact</a><a href="#top">About CoffeeUMS</a></nav><nav><p>Company</p><a href="https://ascendia.ro" target="_blank" rel="noreferrer">Ascendia S.A.</a><a href="#demo">Request a demo</a></nav></div><div class="copyright"><span>© 2026 ASCENDIA S.A. All rights reserved.</span><span>Content management</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
